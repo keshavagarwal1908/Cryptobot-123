@@ -15,7 +15,7 @@ export const PROVIDER = ({ children }) => {
 
   const LOAD_INITIAL_DATA = async () => {
     try {
-      const URL = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3";
+      const URL = "https://gateway.thegraph.com/api/ee9226ec8036b111c953c7a6236753c6/subgraphs/id/5zvR82QoaXYFyDEKLZ9t6v9adgnptxYpKpSbxtgVENFV";
       const query = `
       {
         tokens(orderBy: volumeUSD, orderDirection: desc, first:20){
