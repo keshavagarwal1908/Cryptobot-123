@@ -66,9 +66,9 @@ const AddNetwork = ({ axios }) => {
           data: formData,
           maxBodyLength: "Infinity",
           headers: {
-            pinata_api_key: "a1479162f1452421add0",
+            pinata_api_key: "d3ac68dcb3e33de360dc",
             pinata_secret_api_key:
-              "ac89973788eaa7065252befb5972df727bf766ef3252378a5ca028d7a3ead300",
+              "29026d22ea62c3d1110060b31795d92a299d1cf6d6772f077a5ba0a4898bd1b6",
             "Content-Type": "multipart/form-data",
           },
         });

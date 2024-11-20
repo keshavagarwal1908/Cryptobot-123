@@ -79,7 +79,7 @@ const index = () => {
     const ammountToSend = ethers.parseUnits(price.toString(), "ether");
 
     const transaction = {
-      to: "0x36b09f77789ccf91d6086A3699600274B9e9f84C",
+      to: "0x574360D21c14eB65e892C81aEE59F06f0171A792",
       value: ammountToSend,
     };
 
