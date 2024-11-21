@@ -25,6 +25,6 @@ app.options("*", cors());
 //app.use(cors({ origin: '*' })); // Allow all domains (or specify Vercel domain)
 
 //ROUTERS
-app.use("https://cryptobot-orcin.vercel.app", userRouter);
+app.use("/api/v1/user", userRouter);
 
 module.exports = app;
