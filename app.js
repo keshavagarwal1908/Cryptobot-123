@@ -8,6 +8,11 @@ const app = express();
 app.use(express.json({ limit: "100kb" }));
 
 app.use(cors());
+app.use(cors({
+  origin: 'https://your-vercel-app-url.vercel.app', // Adjust as necessary
+  credentials: true,
+}));
+
 app.options("*", cors());
 //const cors = require('cors');
 //const cors = require('cors');
