@@ -20,7 +20,7 @@ const Login = ({ setActiveComponent, axios, notifyError, notifySuccess }) => {
       //API CALL
       const response = await axios({
         method: "POST",
-        url: `https://cryptobot-orcin.vercel.app/api/v1/user/login`,
+        url: `https://cryptobot-5azpfdoeg-keshavagarwal1908s-projects.vercel.app/api/v1/user/login`,
         withCredentials: true,
         data: {
           email: user.email,

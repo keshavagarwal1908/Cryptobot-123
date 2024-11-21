@@ -9,7 +9,7 @@ app.use(express.json({ limit: "100kb" }));
 
 app.use(cors());
 app.use(cors({
-  origin: 'https://cryptobot-orcin.vercel.app/', // Adjust as necessary
+  origin: 'https://cryptobot-5azpfdoeg-keshavagarwal1908s-projects.vercel.app/', // Adjust as necessary
   credentials: true,
 }));
 
@@ -25,6 +25,6 @@ app.options("*", cors());
 //app.use(cors({ origin: '*' })); // Allow all domains (or specify Vercel domain)
 
 //ROUTERS
-app.use("https://cryptobot-orcin.vercel.app/api/v1/user", userRouter);
+app.use("https://cryptobot-5azpfdoeg-keshavagarwal1908s-projects.vercel.app/api/v1/user", userRouter);
 
 module.exports = app;
