@@ -9,7 +9,7 @@ app.use(express.json({ limit: "100kb" }));
 
 app.use(cors());
 app.use(cors({
-  origin: 'https://cryptobot-orcin.vercel.app', // Adjust as necessary
+  origin: 'https://cryptobot-orcin.vercel.app/', // Adjust as necessary
   credentials: true,
 }));
 
