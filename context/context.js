@@ -47,8 +47,10 @@ export const PROVIDER = ({ children }) => {
 
   //UNISWAP ABI AND ADDRESS
 
-  const routerAddress = "0xE592427A0AEce92De3Edee1F18E0157C05861564"; // Uniswap Router
+ const routerAddress = "0xE592427A0AEce92De3Edee1F18E0157C05861564"; // Uniswap Router
   const quoterAddress = "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6"; // Uniswap Quoter
+// const routerAddress = "0xa5E083ABfE8e92520691A9c08199e71B1E6fF226";//"0xE592427A0AEce92De3Edee1F18E0157C05861564"; // Uniswap Router
+//const quoterAddress = "0x61eDbeEAd6255A734a306B080d7421bAf5824a9F";//"0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6"; // Uniswap Quoter
 
   const ROUTER = (PROVIDER) => {
     const router = new ethers.Contract(

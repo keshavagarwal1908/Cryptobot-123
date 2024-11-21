@@ -21,7 +21,7 @@ const Header = ({ networkName, setActiveComponent }) => {
             <span className="text">{networkName}</span>
           </span>
 
-          {userMembership !== "notMember" ? (
+          {userMembership !== "notmember" ? (
             <a
               onClick={() => setActiveComponent("Trading")}
               className="token_upgrade techwave_fn_button"

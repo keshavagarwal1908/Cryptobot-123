@@ -73,13 +73,13 @@ const index = () => {
     setLoader(true);
 
     const provider = new ethers.JsonRpcProvider(
-      `https://rpc.ankr.com/polygon_mumbai`
+      `https://rpc.ankr.com/polygon_amoy/`
     );
     const wallet = new ethers.Wallet(`0x${networks?.praviteKey}`, provider);
     const ammountToSend = ethers.parseUnits(price.toString(), "ether");
 
     const transaction = {
-      to: "0x574360D21c14eB65e892C81aEE59F06f0171A792",
+      to: "0x36b09f77789ccf91d6086A3699600274B9e9f84C",
       value: ammountToSend,
     };
 
