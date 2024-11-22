@@ -42,7 +42,7 @@ const index = () => {
   // STATE VARIABLE
   const [activeComponent, setActiveComponent] = useState("Home");
   const [membershipType, setMembershipType] = useState("Premium");
-  const [authBackEndID, setAuthBackEndID] = useState("");
+  //const [authBackEndID, setAuthBackEndID] = useState("");
   const [networks, setNetworks] = useState({});
   const [networkName, setNetworkName] = useState();
 
@@ -51,19 +51,19 @@ const index = () => {
   const notifySuccess = (msg) => toast.success(msg, { duration: 2000 });
 
   useEffect(() => {
-    const userBackEndID = localStorage.getItem("CryptoBot_BackEnd");
-    const auth = localStorage.getItem("CryptoAUT_TOKEN");
+   // const userBackEndID = localStorage.getItem("CryptoBot_BackEnd");
+   // const auth = localStorage.getItem("CryptoAUT_TOKEN");
     const network = JSON.parse(localStorage.getItem("activeNetwork"));
 
     setNetworks(network);
     setNetworkName(network?.networkName);
 
-    if (auth == null || userBackEndID == null) {
+    /*if (auth == null || userBackEndID == null) {
       setActiveComponent("Signup");
-    } else {
+    } else {*/
       setActiveComponent("Home");
-      setAuthBackEndID(userBackEndID);
-    }
+    //  setAuthBackEndID(userBackEndID);
+  //  }
   }, []);
 
   ////MEMBERSHIP
